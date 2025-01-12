@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="line.css">
+    <link rel="stylesheet" href="project1.css">
+
+    <script src="spiral.js"></script>
+    <script src="project-line.js"></script>
+    <script src="logic.js"></script>
+    <script src="project1remake.js"></script>
+</head>
+
+    <svg>
+        <filter id="pixelate1" x="0" y="0">
+        <feFlood x="4" y="4" height="2" width="2"/>
+        
+        <feComposite width="1" height="1"/>
+        
+        <feTile result="a"/>
+        
+        <feComposite in="SourceGraphic" in2="a" 
+            operator="in"/>
+        
+        <feMorphology operator="dilate"
+            radius="5"/>
+        </filter>
+    </svg>
+
+
+<body>
+    <div class="fullscreenChecker">
+        <div class="fullscreenText">
+            <h1>Denna Sida Är Bäst Upplevd I Helskärmsläge Och En Upplösning på 1920x1080</h1>
+            <h1>Klicka Vart Som För Att Fortsätta</h1>
+        </div>
+    </div>
+    
+
+    <div id="container" class="containerClass"></div>
+
+    <div class="navigationContainer">
+        <div class="navigationButtons">
+            <h1 id="prev-project" class="button"><</h1>
+            <h1>Projekt</h1>
+            <div id="prev-next-project" class="prevNextProject">
+                <div class="numberRoller" id="number-roller">
+                    <h1 id="prev-prev-project-number">0</h1>
+                    <h1 id="prev-project-number">´</h1>
+                    <h1 id="active-project-number">1</h1>
+                    <h1 id="next-project-number">2</h1>
+                    <h1 id="next-next-project-number">3</h1>
+                </div>
+            </div>
+            <h1 id="next-project" class="button">></h1>
+        </div>
+        <div id="project-text" class="projectText">
+            <p id="active-project-text">Välkommen till starten av hemsidan, samt starten av tidslinjen i min programmeringsresa! Jag började med att lära mig JavaScript på en hemsida där jag lyckades få med mig de absoluta grunderna. Med hjälp av dessa grunder lyckades jag skapa ett sten - sax - påse spel på en hemsidan där man kunde programera fritt och se konsolen likt så som detta projekt visar.</p>
+            <p id="learned">Vad jag har lärt samt tagit med mig från detta projektet: Hur man kan ta användarens input och använda det.</p>
+        </div>
+    </div>
+    
+    <div id="project-line" class="line">
+        <div class="closeContainer" id="close">
+            <svg id="" width="1.2vw" height="1.2vw" viewBox="0 0 25.00 25.00" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.2"></g><g id="SVGRepo_iconCarrier"> <path d="M3 21.32L21 3.32001" stroke="#ff0000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M3 3.32001L21 21.32" stroke="#ff0000" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+        </div>
+        <div class="prContainer">
+            <div id="pr-text-container" class="prTextContainer">
+                <h1 id="click-text">Click To View</h1>
+            </div>
+            <div id="project" class="pr">
+                <div class="project">
+                    <iframe id="project-to-show" class="project" src="projektFinal/project1_remake/index.html" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

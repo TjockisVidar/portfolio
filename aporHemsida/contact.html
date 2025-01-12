@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Apor</h1>
+    <nav>
+        <a href="index.html">Hem</a>
+        <a href="aboutUs.html">Om oss</a>
+        <a href="contact.html">Kontakta oss</a>
+    </nav>
+
+    <fieldset>
+        <legend>Kontakta oss</legend>
+        <form>
+            <input id="textSpace" type="text"> Namn
+            <br>
+            <input type="text"> Meil adress
+            <br>
+            <textarea cols="30" rows="10">Ditt meddelande</textarea> 
+            <input type="reset">
+        </form>
+    </fieldset>
+    <button onclick="send()">Skicka</button>
+
+    <img id="image" src="" alt="">
+</body>
+    <script>
+        function send() {
+            document.getElementById("image").src = "https://i.pinimg.com/originals/04/d5/23/04d5235026dc9cba90ca1da10503628c.png"
+        }
+    </script>
+</html>

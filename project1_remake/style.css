@@ -1,0 +1,70 @@
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: rgb(50, 50, 73);
+    overflow: hidden;
+}
+
+.middleLine {
+    position: absolute;
+    top: 0;
+    left: 49.9%;
+    width: 0.2%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+.startReset {
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 47.5%;
+    top: 90%;
+    z-index: 2;
+    border: 0.2vw solid white;
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.code {
+    position: absolute;
+    left: 0.5%;
+    background-color: rgb(28, 31, 34);
+    width: 49.5%;
+    height: 54vw;
+    border-radius: 3% 0 0 3%;
+    p {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 84%;
+        margin: 0.3%;
+        margin-left: 2%;
+    }
+    .right {
+        margin-left: 5%;
+    }
+}
+
+.console {
+    position: absolute;
+    right: 0.5%;
+    background-color: black;
+    width: 49.5%;
+    height: 54vw;
+    border-radius: 0 3% 3% 0;
+    p {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 84%;
+        margin: 0.3%;
+        margin-left: 2%;
+    }
+    .relativeText {
+        display: flex;
+    }
+}

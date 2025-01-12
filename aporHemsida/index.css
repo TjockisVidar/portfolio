@@ -1,0 +1,218 @@
+body {
+    min-height: 300vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgb(5, 49, 12) 0%, rgba(34, 121, 9, 1) 34%, rgba(0, 255, 8, 1) 100%);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.headerTxt {
+    font-size: 10vw;
+    position: absolute; top: -5vw;
+    position: absolute; left: 38.5%;
+    color: #48555b;
+    -webkit-text-stroke: 0.25vw white;
+    font-family: arial;
+}
+
+.scrollButton {
+    z-index: 1;
+    position: relative; left: 47.5%;
+    position: absolute; top: 90%;
+    margin-top: -1.5vw;
+    border: none;
+    background: none;
+    font-size: 5vw;
+    -webkit-text-stroke: 0.15vw black;
+    color: blue;
+    animation: upAndDown 2s infinite;
+}
+
+@keyframes upAndDown {
+    0% {position: absolute; top: 90%;}
+    50% {position: absolute; top: 87%;}
+    100% {position: absolute; top: 90%;}
+}
+
+nav {
+    text-align: center;
+    margin: 20vw;
+}
+
+.start_background {
+    height: 100%;
+    width: 100%;
+    background-color: #48555b;
+    z-index: -1;
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    box-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.5);
+}
+
+.start_background_img {
+    width: 100%;
+    height: 100%;
+}
+
+.buttonClass {
+    background-color: yellow;
+    width: 20%;
+    height: 10%;
+}
+
+.link1 {
+    margin-right: 5vw;
+}
+
+.link2 {
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+
+.link3 {
+    margin-left: 5vw;
+}
+
+::-webkit-scrollbar {
+    width: 0vw;
+}
+
+main {
+    position: absolute; top: 100%;
+}
+
+.headerMonk {
+    position: relative;
+    left: 77%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+}
+
+.headerNose {
+    position: relative;
+    left: 75%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2vw;
+    margin-bottom: -7.04vw;
+    z-index: 2;
+}
+
+
+.images {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+}
+
+.imgBox1 {
+    width: 50vw;
+    height: 20vw;
+    position: relative;
+    right: 2%;
+}
+
+.imgBox2 {
+    width: 50vw;
+    height: 20vw;
+    position: relative;
+    right: 2%;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.imgBox3 {
+    width: 50vw;
+    height: 20vw;
+    position: relative;
+    right: 2%;
+}
+
+.imgBox1:hover .img1 {
+    left: 10%;
+}
+
+.imgBox2:hover .img2 {
+    left: 10%;
+}
+
+.imgBox3:hover .img3 {
+    left: 10%;
+}
+
+.img1 {
+    position: absolute;
+    left: 60%;
+    height: 20vw;
+    width: 20vw;
+    transition: left ease 1.3s;
+    z-index: 1;
+}
+
+.img2 {
+    position: absolute;
+    left: 60%;
+    height: 20vw;
+    width: 20vw;
+    transition: left ease 1.3s;
+}
+
+.img3 {
+    position: absolute;
+    left: 60%;
+    height: 20vw;
+    width: 20vw;
+    transition: left ease 1.3s;
+    background-size: cover;
+}
+
+.noseTxt {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    position: relative;
+    top: 100%;
+    left: 55%;
+    opacity: 0%;
+}
+
+.orangTxt {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    position: relative;
+    top: 100%;
+    left: 55%;
+    opacity: 0%;
+}
+
+.chimpTxt {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    position: relative;
+    top: 100%;
+    left: 55%;
+    opacity: 0%;
+}
+
+.imgBox1:hover .noseTxt {
+    animation: showTxt 1s forwards;
+}
+
+.imgBox2:hover .orangTxt {
+    animation: showTxt 1s forwards;
+}
+
+.imgBox3:hover .chimpTxt {
+    animation: showTxt 1s forwards;
+}
+
+@keyframes showTxt {
+    from { opacity: 0%; top: 20%; }
+    to { opacity: 100%; top: 20%; }
+}
+
+footer {
+    position: absolute; top: 300%;
+}
